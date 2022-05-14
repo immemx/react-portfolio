@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import Nav from './componets/Nav'
 import About from './componets/About'
+import Work from './componets/Work'
+import Contact from './componets/Contact';
 import './App.css';
 
 function App() {
@@ -25,6 +27,16 @@ function App() {
     navChoices('About')
   })
 
+  // const render = () => {
+  //   if (choice === 'Work') {
+	// 		return <Work />;
+	// 	}
+	// 	if (choice === 'Contact') {
+	// 		// return <Contact />;
+	// 	}
+	// 	return <About />;
+	// };
+
   return (
     <>
     <Nav navChoices={navChoices} choice={choice} setChoice={setChoice}>
@@ -32,10 +44,8 @@ function App() {
     </Nav>
 
     {choice === 'About' && (<About />)}
-    
-    {/* {currentNavItem === 'contact' && (<Gallery />)}
-    {currentNavItem === 'contact' && (<Gallery />)} */}
-    
+    {choice === 'Work' && (<Work />)}
+    {choice === 'Contact' && (<Contact />)}
     </>
   );
 }
