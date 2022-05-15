@@ -3,6 +3,7 @@ import Nav from './componets/Nav'
 import About from './componets/About'
 import Work from './componets/Work'
 import Contact from './componets/Contact';
+import Footer from './componets/Footer'
 import './App.css';
 
 function App() {
@@ -46,7 +47,10 @@ function App() {
     {choice === 'About' && (<About />)}
     {choice === 'Work' && (<Work />)}
     {choice === 'Contact' && (<Contact />)}
+
+    <Footer />
     </>
+    
   );
 }
 

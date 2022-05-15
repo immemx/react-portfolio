@@ -1,6 +1,10 @@
-a, a:hover, a:focus, a:active {
+a {
     text-decoration: none;
     color: inherit;
+}
+
+a:hover {
+    color: #B32428;
 }
 
 ul {
@@ -10,5 +14,14 @@ ul {
 }
 
 header {
+    background-color: #B5B8B1;
+}
+
+ul li {
+    display: inline;
+    padding: 10px;
+}
+
+footer {
     background-color: #B5B8B1;
 }

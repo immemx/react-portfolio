@@ -6,14 +6,14 @@ function Nav(props) {
 
     return (
         <header className="flex-row px-1">
-            <h2 >
+            <h1 className="text-center pt-3">
                 <a href="/">
                     Matthew Eayres
                 </a>
-            </h2>
+            </h1>
             <nav>
-                <ul className="flex-row">
-                        <li className={'mx-1'}>
+                <ul className="flex-row text-center py-3 mt-4">
+                        <li className='mx-1'>
                             <a 
                             href="#about"
                             onClick={() => setChoice('About')}
