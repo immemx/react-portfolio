@@ -1,4 +1,5 @@
 import React from 'react';
+import ME from '../../assets/img/ME.png'
 
 function About() {
 
@@ -6,6 +7,8 @@ function About() {
         <>
         <div className='text-center'>
         <h3 className='my-3'> Welcome! </h3>
+        <img src={ME} className='img-fluid mx-auto d-flex'></img>
+        <a href='../assets/Resume-Matthew-Eayres.pdf' download><i class="fa-solid fa-download fa-xl my-5"> Resume</i></a>
         <p className='my-3'> Im a professional web developer with proficiency in the following technologies: </p>
         </div>
         <div className='flex-row d-flex justify-content-center'>
